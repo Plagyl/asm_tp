@@ -30,9 +30,9 @@ _conversion:
 ;verifier si c'est un chiffre
 
 	cmp rcx, '0'
-	jl _parite
+	jl _error
 	cmp rcx, '9'
-	jg _parite
+	jg _error
 
 ; conversion ascii / decimal
 
